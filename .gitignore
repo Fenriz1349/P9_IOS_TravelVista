@@ -4,3 +4,5 @@ xcuserdata/
 ## Xcode 8 and earlier
 *.xcscmblueprint
 *.xccheckout
+TravelVista/.DS_Store
+.DS_Store
