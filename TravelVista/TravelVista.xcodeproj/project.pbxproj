@@ -20,6 +20,7 @@
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		6804354E2EB8BE52004CF49D /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 424C31C52B30A76900279238 /* Source.json */; };
 		68C3CD322EBDD67E00EDD5E4 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C3CD312EBDD67E00EDD5E4 /* TitleView.swift */; };
+		68C3CD3B2EBDD86900EDD5E4 /* PreviewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C3CD3A2EBDD86900EDD5E4 /* PreviewDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		680435432EB8BC1B004CF49D /* TravelVistaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6805D3202EB5089700CC3050 /* TravelVista.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TravelVista.xctestplan; sourceTree = "<group>"; };
 		68C3CD312EBDD67E00EDD5E4 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		68C3CD3A2EBDD86900EDD5E4 /* PreviewDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -137,6 +139,7 @@
 			children = (
 				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
+				68C3CD392EBDD82F00EDD5E4 /* Preview Content */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C182B2A055B00779364 /* Main.storyboard */,
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
@@ -144,6 +147,14 @@
 				42B90C202B2A056000779364 /* Info.plist */,
 			);
 			path = TravelVista;
+			sourceTree = "<group>";
+		};
+		68C3CD392EBDD82F00EDD5E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68C3CD3A2EBDD86900EDD5E4 /* PreviewDataProvider.swift */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
 				68C3CD322EBDD67E00EDD5E4 /* TitleView.swift in Sources */,
+				68C3CD3B2EBDD86900EDD5E4 /* PreviewDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

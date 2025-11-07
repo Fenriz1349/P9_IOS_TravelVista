@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct TitleView: View {
+    let country: Country
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(country.name)
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.blue)
+                Text(country.capital)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+
+            Spacer()
+
+            HStack(spacing: 4) {
+                ForEach(0..<country.rate, id: \.self) { _ in
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.orange)
+                }
+            }
+        }
+        .padding()
     }
 }
 
 #Preview {
-    TitleView()
+    TitleView(country: PreviewDataProvider.previewCountry)
 }

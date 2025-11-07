@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import MapKit
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
@@ -31,6 +32,32 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    private func embedSwiftUITitle(for country: Country) {
+        // 1. Créer la vue SwiftUI
+        let swiftUIView = TitleView(country: country)
+        
+        // 2. L’envelopper dans un UIHostingController
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        
+        // 3. Ajouter comme enfant du ViewController UIKit
+        addChild(hostingController)
+        
+        // 4. Ajouter la vue dans le container (titleView)
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        titleView.addSubview(hostingController.view)
+        
+        // 5. Contraintes pour le faire remplir titleView
+        NSLayoutConstraint.activate([
+            hostingController.view.topAnchor.constraint(equalTo: titleView.topAnchor),
+            hostingController.view.leadingAnchor.constraint(equalTo: titleView.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: titleView.trailingAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: titleView.bottomAnchor)
+        ])
+        
+        // 6. Prévenir le hostingController que l’ajout est fini
+        hostingController.didMove(toParent: self)
+    }
+
     private func setUpData(country: Country) {
         self.title = country.name
         
