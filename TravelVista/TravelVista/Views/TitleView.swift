@@ -15,10 +15,10 @@ struct TitleView: View {
             VStack(alignment: .leading) {
                 Text(country.name)
                     .font(.title2)
-                    .bold()
-                    .foregroundColor(.blue)
+                    .fontWeight(.medium)
+                    .foregroundColor(.customBlue)
                 Text(country.capital)
-                    .font(.subheadline)
+                    .font(.title2)
                     .foregroundColor(.gray)
             }
 
@@ -27,7 +27,7 @@ struct TitleView: View {
             HStack(spacing: 4) {
                 ForEach(0..<country.rate, id: \.self) { _ in
                     Image(systemName: "star.fill")
-                        .foregroundColor(.orange)
+                        .foregroundColor(.accentColor)
                 }
             }
         }

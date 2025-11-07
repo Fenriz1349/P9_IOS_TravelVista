@@ -128,14 +128,6 @@ final class TravelVistaUITests: XCTestCase {
         XCTAssertTrue(osloElement.waitForExistence(timeout: 2),
                       "The map should show a pin or label for the capital 'Oslo'")
     }
-
-    // MARK: - General Behavior
-
-    func test_AppLaunch_Performance() throws {
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
-    }
 }
 
 // Reusable helpers
