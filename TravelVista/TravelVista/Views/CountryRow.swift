@@ -22,7 +22,6 @@ struct CountryRow: View {
                     .fontWeight(.medium)
                     .foregroundColor(.customBlue)
                 Text(country.capital)
-//                    .font()
             }
 
             Spacer()

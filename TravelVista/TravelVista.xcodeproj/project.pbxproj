@@ -14,11 +14,11 @@
 		424C31C62B30A76900279238 /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 424C31C52B30A76900279238 /* Source.json */; };
 		424C31C82B30A78B00279238 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31C72B30A78B00279238 /* Service.swift */; };
 		42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C122B2A055B00779364 /* AppDelegate.swift */; };
-		42B90C172B2A055B00779364 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C162B2A055B00779364 /* ListViewController.swift */; };
 		42B90C1A2B2A055B00779364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C182B2A055B00779364 /* Main.storyboard */; };
 		42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1B2B2A056000779364 /* Assets.xcassets */; };
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		6804354E2EB8BE52004CF49D /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 424C31C52B30A76900279238 /* Source.json */; };
+		683971F72EBE5C7F002649A4 /* HostingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683971F62EBE5C7F002649A4 /* HostingListViewController.swift */; };
 		688A867F2EBE2E0000090DBC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688A867E2EBE2E0000090DBC /* ListView.swift */; };
 		688A86812EBE2E1500090DBC /* CountryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688A86802EBE2E1500090DBC /* CountryRow.swift */; };
 		68C3CD322EBDD67E00EDD5E4 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C3CD312EBDD67E00EDD5E4 /* TitleView.swift */; };
@@ -51,7 +51,6 @@
 		424C31C72B30A78B00279238 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		42B90C0F2B2A055B00779364 /* TravelVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B90C122B2A055B00779364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42B90C162B2A055B00779364 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		42B90C192B2A055B00779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42B90C1B2B2A056000779364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B90C1E2B2A056000779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		680435322EB8BB0B004CF49D /* TravelVistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		680435432EB8BC1B004CF49D /* TravelVistaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6805D3202EB5089700CC3050 /* TravelVista.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TravelVista.xctestplan; sourceTree = "<group>"; };
+		683971F62EBE5C7F002649A4 /* HostingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingListViewController.swift; sourceTree = "<group>"; };
 		688A867E2EBE2E0000090DBC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		688A86802EBE2E1500090DBC /* CountryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRow.swift; sourceTree = "<group>"; };
 		68C3CD312EBDD67E00EDD5E4 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
@@ -99,12 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				424C31BC2B30955E00279238 /* DetailViewController.swift */,
-				42B90C162B2A055B00779364 /* ListViewController.swift */,
 				424C31BA2B30919400279238 /* CustomCell.swift */,
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 				68C3CD312EBDD67E00EDD5E4 /* TitleView.swift */,
 				688A867E2EBE2E0000090DBC /* ListView.swift */,
 				688A86802EBE2E1500090DBC /* CountryRow.swift */,
+				683971F62EBE5C7F002649A4 /* HostingListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,11 +310,11 @@
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				688A867F2EBE2E0000090DBC /* ListView.swift in Sources */,
 				688A86812EBE2E1500090DBC /* CountryRow.swift in Sources */,
-				42B90C172B2A055B00779364 /* ListViewController.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
+				683971F72EBE5C7F002649A4 /* HostingListViewController.swift in Sources */,
 				68C3CD322EBDD67E00EDD5E4 /* TitleView.swift in Sources */,
 				68C3CD3B2EBDD86900EDD5E4 /* PreviewDataProvider.swift in Sources */,
 			);
