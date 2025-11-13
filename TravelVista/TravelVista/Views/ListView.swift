@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ListView: View {
     let regions: [Region] = Service().load("Source.json")
-    private let viewModel = ListViewModel()
 
     var body: some View {
         List {
             ForEach(regions, id: \.name) { region in
-                Section(header: Text(region.name)
-                    .foregroundColor(.gray)) {
+                Section(header:
+                            Text(region.name)
+                            .foregroundColor(.gray)
+                ) {
                     ForEach(region.countries, id: \.name) { country in
-                        Button {
-                            viewModel.openDetailView(for: country)
-                        } label: {
+                        NavigationLink(
+                            destination: DetailViewRepresentable(country: country)
+                                .navigationTitle(country.name)
+                        ) {
                             CountryRow(country: country)
                         }
                         .buttonStyle(.plain)
@@ -27,7 +29,6 @@ struct ListView: View {
                 }
             }
         }
-        .listStyle(.plain)
         .navigationTitle("Liste de voyages")
     }
 }
