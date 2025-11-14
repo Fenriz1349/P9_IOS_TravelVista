@@ -19,13 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let listView = ListView()
         let hostingController = UIHostingController(rootView: listView)
+        hostingController.title = "Liste de voyages"
+        
         let navigationController = UINavigationController(rootViewController: hostingController)
 
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        self.window = window
 
         return true
     }
 }
-

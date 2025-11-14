@@ -12,7 +12,7 @@
         <!--Detail View Controller-->
         <scene sceneID="HZV-6C-8oR">
             <objects>
-                <viewController id="0Db-d4-uNW" customClass="DetailViewController" customModule="TravelVista" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Db-d4-uNW" customClass="DetailViewController" customModule="TravelVista" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P5q-il-YDl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kIJ-o5-1d1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gYc-kV-N1y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationViewControler" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gYc-kV-N1y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAS-G4-wzy">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
