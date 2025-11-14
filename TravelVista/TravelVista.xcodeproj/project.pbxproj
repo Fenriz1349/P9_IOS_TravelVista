@@ -69,7 +69,6 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		680435332EB8BB0B004CF49D /* TravelVistaTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TravelVistaTests; sourceTree = "<group>"; };
-		680435442EB8BC1B004CF49D /* TravelVistaUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TravelVistaUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +127,6 @@
 				6805D3202EB5089700CC3050 /* TravelVista.xctestplan */,
 				42B90C112B2A055B00779364 /* TravelVista */,
 				680435332EB8BB0B004CF49D /* TravelVistaTests */,
-				680435442EB8BC1B004CF49D /* TravelVistaUITests */,
 				42B90C102B2A055B00779364 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -221,9 +219,6 @@
 			);
 			dependencies = (
 				6804354A2EB8BC1B004CF49D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				680435442EB8BC1B004CF49D /* TravelVistaUITests */,
 			);
 			name = TravelVistaUITests;
 			packageProductDependencies = (
