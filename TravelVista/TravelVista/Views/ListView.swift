@@ -16,6 +16,7 @@ struct ListView: View {
                 Section(header:
                             Text(region.name)
                             .foregroundColor(.gray)
+                            .textCase(nil)
                 ) {
                     ForEach(region.countries, id: \.name) { country in
                         NavigationLink(

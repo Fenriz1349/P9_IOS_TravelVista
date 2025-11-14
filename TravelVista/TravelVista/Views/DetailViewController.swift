@@ -29,6 +29,17 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let navigationController = self.navigationController,
+           let previousViewController = navigationController.viewControllers.dropLast().last {
+            let backItem = UIBarButtonItem()
+            backItem.title = "Liste de voyages"
+            previousViewController.navigationItem.backBarButtonItem = backItem
+        }
+    }
+
     private func setUpData(country: Country) {
         self.imageView.image = UIImage(named: country.pictureName)
         self.embedSwiftUITitle(for: country)
@@ -36,7 +47,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 
         self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
                             long: self.country?.coordinates.longitude ?? 84.124008)
-       
     }
 
     private func embedSwiftUITitle(for country: Country) {
