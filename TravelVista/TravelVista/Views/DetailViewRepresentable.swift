@@ -21,4 +21,3 @@ struct DetailViewRepresentable: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: DetailViewController, context: Context) {
     }
 }
-
